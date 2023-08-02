@@ -1,0 +1,54 @@
+-<!-- nth child -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #from{
+            width: 50%;
+            color:blueviolet;
+            background-color: blanchedalmond;
+        }
+        ul li:nth-child(even){
+            color: brown;
+            background-color: aliceblue;
+        } 
+        ul li:nth-child(odd){
+            color:blue;
+            background-color: blanchedalmond;
+        }
+        ul li:nth-child(3){
+            color: black;
+            background-color:aquamarine;
+        }
+        ul li:nth-child(2n){
+            font-size: medium;
+            font-style: oblique;
+        }
+        ul li:nth-child(3n+1){
+            font-style: normal;
+            font-size: large;
+        }
+        ul li:nth-last-child(odd){
+            font-style:italic;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <fieldset id="from">
+    <ul id="from1">
+        <h1>Frontend</h1>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+    <li>Python</li>
+    <li>SQL</li>
+    <li>PHP</li>
+    </ul>
+
+    </fieldset>
+</body>
+</html>

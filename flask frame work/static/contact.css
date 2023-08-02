@@ -1,0 +1,140 @@
+#nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(57, 57, 94);
+    color: rgb(239, 207, 207);
+    margin: 0;
+    padding: 2px;
+}
+
+.block1{
+    list-style-type: none;
+    font-family: serif;
+    font-size: 20px;
+}
+
+.block2{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-family: serif; 
+}
+
+.parent{
+    position: relative;
+
+}
+
+a:link{
+    text-decoration: none;
+}
+
+#link{
+    color: burlywood;
+    text-transform: uppercase;
+}
+
+.nav_ele{
+    list-style-type: none;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-delay: 0.2s;
+    transition-timing-function: ease;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    color: bisque;
+    top: 30px;
+}
+
+.nav_ele li{
+    margin: 0;
+    background-color: rgb(187, 178, 196);
+    width: 100%;
+    padding: 5px;
+
+}
+
+#link:hover~.nav_ele{
+    height: max-content;
+}
+
+.block2>li{
+    margin: 0px 10px ;
+}
+
+body{
+    background-image: url(Img/p1.jpg); 
+}
+
+.box{
+        background-image: url(pic/p4.jpg);
+        margin: auto;
+        padding: 30px;
+        padding-top: 15px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+        border-radius: 5px;
+        width: 35%;
+        margin-top: 60px;
+        /* transform: translateX(5px); */
+}
+
+.box label{
+    padding: 5px;
+    display: inline-block;
+    width: 200px; 
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+textarea{
+    padding: 5px;
+    margin: 10px;
+}
+
+input{
+    padding: 5px;
+    margin: 10px;
+}
+
+#submit{
+    background-color: rgb(75, 75, 108);
+    width: 30%;
+    color: bisque;
+    text-align: center; 
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 7px #999;
+}
+
+#submit:hover{
+    transform: skew(5deg);
+    background-color: rgb(35, 35, 88);
+}
+
+h1{
+    text-align: center;
+    color: rgb(30, 30, 49);
+    font-family: serif;
+}
+
+.box1{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.box1_ele1,
+.box1_ele2{
+    background-image: url(pic/p3.jpg);
+    margin: auto;
+    padding: 60px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+    border-radius: 5px;
+    /* margin-top: 200px; */
+}
+
+
+

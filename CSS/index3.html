@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="square">
+        <textarea name="" id="box1" cols="10" rows="2"></textarea><br>
+        <textarea name="" id="box2" cols="10" rows="2"></textarea><br>
+        <input type="button" data-value="add" onclick="math(event)">
+        <input type="button" data-value="sub" onclick="math(event)">
+        <input type="button" data-value="mul" onclick="math(event)">
+        <input type="button" data-value="div" onclick="math(event)">
+    </div>
+    <script>
+        function math(e){
+        var a = e.target.getAttribute('data-value');
+        var b=document.getElementById("box1").value
+        var c=document.getElementById("box2").value
+        if(a=="add"){
+            console.log(parseInt(b)+ parseInt(c))
+        }
+        if (a=="sub") {
+            console.log(parseInt(b)- parseInt(c))    
+        }
+        if(a=="mul"){
+            console.log(parseInt(b)* parseInt(c))
+        }
+        if(a=="div"){
+            console.log(parseInt(b)/ parseInt(c))
+        }
+    }
+    </script>
+</body>
+</html>

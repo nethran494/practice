@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #from{
+                position: relative;
+                width: 50%;
+                margin: auto;
+                padding: 100px;
+            }
+            #fro{
+                color: black;
+                font-size: XXX-larger;
+                font-style: normal;
+                text-align: center;
+            }
+            #from1, #from2{
+                transform: scale(0);
+                color: blueviolet;
+                background-color: antiquewhite;
+                font-size: medium;
+                font-style: italic;
+                transition-property: all;
+                transition-delay: 1s;
+                transition-duration: 3s;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+               
+            }
+            
+            #from1.active,#from2.active{
+                transform: scale(1);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="from">
+        <div id="from1" class="active">
+            <h1 id="fro">Login Form</h1>
+            <label >Username :</label>
+            <input type="text" name="" id=""><br>
+    
+            <label>Password :</label>
+            <input type="password" name="" id=""><br>
+
+            <input type="button" value="Submit"><br>
+            <a data-value="from2" onclick="math(event)">signup</a>
+        </div>
+        <div id="from2">
+            <h2 id="fro">Registration From</h2>
+            <label for="">FIRST NAME:</label>
+                <input type="text" name="fname" id=""><br>
+
+                <label for="">LAST NAME:</label>
+                <input type="text" name="lname" id=""><br>
+
+                <label for="">EMAIL:</label>
+                <input type="email" name="email" id=""><br>
+
+                <label for="">PREFERED USERNAME:</label>
+                <input type="text" name="username" id=""><br>
+
+                <label for="">CREATE PASSWORD:</label>
+                <input type="password" name="password" id=""><br>
+
+                <label for="">UPLOAD PHOTO:</label>
+                <input type="file" name="photo" id=""> <br>
+
+                <label for=""></label>
+                <input type="submit" value="SUBMIT" id="submit"><br>
+                <a data-value="from2" onclick="math(event)">signin</a>
+        </div>
+        </div>
+        <script>
+            function math(e){
+            var a = e.target.getAttribute('data-value');
+            console.log(a)
+            
+            c=["from1","from2"]
+            for(let i=0; i<c.length; i++){
+                // c.map (function(i){
+                // console.log(c[i])
+                if(a==c[i]){
+                    document.getElementById(c[i]).classList.add("active")
+                }
+                else{
+                    document.getElementById(c[i]).classList.remove("active")
+                }
+            }
+        }
+    
+        </script>
+    </body>   
+</html>

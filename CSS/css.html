@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #head.active{
+      color: blue;
+      background-color: antiquewhite;
+      font-size:XX-larger;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="head">Hello</h1>
+  <input type="button" value="submit" onclick="math(event)">
+  <input type="button" value="submit" onclick="math(event)">
+  <script>
+    function math(e){
+      var a = document.getElementById("head")
+      // only using javaScript but inseted of this j query we are using{ a.addclass("active")}
+      a.classList.add("active")
+    }
+  </script>
+</body>
+</html>

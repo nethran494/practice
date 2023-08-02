@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div id="square">
+        <textarea name="" id="box1" cols="10" rows="2"></textarea><br>
+        <textarea name="" id="box2" cols="10" rows="2"></textarea><br>
+        <input type="button" value="+" onclick="add()">
+        <input type="button" value="-" onclick="sub()">
+        <input type="button" value="*" onclick="mul()">
+        <input type="button" value="/" onclick="div()">
+    </div>
+    <script>
+        function add(){
+        var a=document.getElementById("box1").value
+        var b=document.getElementById("box2").value
+        console.log(parseInt(a)+parseInt(b))
+        }
+        function sub(){
+        var a=document.getElementById("box1").value
+        var b=document.getElementById("box2").value
+        console.log(parseInt(a)-parseInt(b))
+        }
+        function mul(){
+        var a=document.getElementById("box1").value
+        var b=document.getElementById("box2").value
+        console.log(parseInt(a)*parseInt(b))
+        }
+        function div(){
+        var a=document.getElementById("box1").value
+        var b=document.getElementById("box2").value
+        console.log(parseInt(a)/parseInt(b))
+        }
+
+    </script>
+</body>
+</html>

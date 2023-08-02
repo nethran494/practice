@@ -1,0 +1,113 @@
+#nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(57, 57, 94);
+    color: rgb(239, 207, 207);
+    margin: 0;
+    padding: 2px;
+}
+
+.block1{
+    list-style-type: none;
+    font-family: serif;
+    font-size: 20px;
+}
+
+.block2{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-family: serif; 
+}
+
+.parent{
+    position: relative;
+
+}
+
+a:link{
+    text-decoration: none;
+}
+
+#link{
+    color: burlywood;
+    text-transform: uppercase;
+}
+
+.nav_ele{
+    list-style-type: none;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    transition-timing-function: ease;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    color: bisque;
+    top: 30px;
+}
+
+.nav_ele li{
+    margin: 0;
+    background-color: rgb(187, 178, 196);
+    width: 100%;
+    padding: 5px;
+
+}
+
+#link:hover~.nav_ele{
+    height: max-content;
+}
+
+.block2>li{
+    margin: 0px 10px ;
+}
+
+body{
+    background-image: url(Img/p1.jpg);   
+}
+
+#img{
+    width: 900px;
+    height: 550px;
+    /* margin-top: 4px; */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    margin: 0;
+}
+.img{
+    margin: auto;
+    text-align: center;
+}
+
+.text{
+    margin-top: 40px;
+    text-align: justify;
+    font-size: 20px;
+    color: rgb(15, 14, 14);
+    /* color: rgb(215, 252, 252); */
+    /* color: rgb(40, 36, 30); */
+    font-family: sans-serif;
+    /* text-shadow: 1px 1px 1px wheat; */
+    justify-self: normal;
+}
+
+h1{
+    /* text-align: center; */
+    color: rgb(101, 44, 84);
+    font-family: serif;
+    animation-name: head;
+    animation-duration: 15s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes head {
+    from{transform: translateX(0px);}
+    to{transform: translateX(1500px);}
+    
+}

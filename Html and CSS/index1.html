@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #family{
+            display: flex;
+            justify-content: space-around;
+            background-color: antiquewhite;
+            top: 20px;
+            list-style-type: none;
+            
+        }
+         #nav{ 
+            list-style-type:none;
+            color: blueviolet;
+            padding: 15px;
+            margin:0; 
+            top: 15px;
+            display: flex;
+        } 
+         #ma{ 
+            list-style-type: none;
+            display: flex;
+            color: blueviolet;
+            justify-content: space-around;
+            /* box-shadow: 2px 1px 2px brown; */
+            padding: 10px;
+            text-transform: uppercase;
+        }  
+        
+        #Parent{
+            position: relative;
+            top: 20px;
+        }
+        #child{
+            position: relative;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-delay: 1s;
+            transition-timing-function: ease;
+            overflow:hidden;
+            color:black;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            top: 15px;
+        }
+        #mom, #child{
+            position: absolute;
+        }
+
+        #mom:hover~#child {
+            height: max-content;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div id="family">
+        <ul id="nav">
+
+        <li id="parent">
+            <a href="" id="mom">Website</a>
+            <ol id="child">
+            <li>Google page</li>
+            <li>About us</li>
+            <li>Contact</li>
+            <li>Login</li>
+            <li>menu</li>
+            </ol>
+        </li>
+        </ul>
+
+        <ul id="ma">
+            <li id="parent">
+            <a href="" id="mom">Home</a>
+            <ol id="child">
+                <li>Nethra</li>
+                <li>kavya</li>
+                <li>divya</li>
+            </ol>
+            </li>
+            <li id="parent">
+                <a href="" id="mom">Contact</a>
+                <ol id="child">
+                    <li>Phone No</li>
+                    <li>Email</li>
+                </ol>
+            </li>
+            <li id="parent">
+                <a href="" id="mom">About us</a>
+                <ol id="child">
+                    <li>info</li>
+                </ol>
+            </li>
+    
+            <li id="parent">
+                <a href="" id="mom">Login</a>
+                <ol id="child">
+                    <li>User name</li>
+                    <li>password</li>
+                </ol>
+            </li>
+            
+        </ul>
+    </div>
+</body>
+</html>

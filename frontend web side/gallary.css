@@ -1,0 +1,136 @@
+#nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(57, 57, 94);
+    color: rgb(239, 207, 207);
+    margin: 0;
+    padding: 2px;
+    position: sticky;
+}
+
+.block1{
+    list-style-type: none;
+    font-family: serif;
+    font-size: 20px;
+}
+
+.block2{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-family: serif; 
+}
+
+.parent{
+    position: relative;
+
+}
+
+a:link{
+    text-decoration: none;
+}
+
+#link{
+    color: burlywood;
+    text-transform: uppercase;
+}
+
+.nav_ele{
+    list-style-type: none;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-delay: 0.2s;
+    transition-timing-function: ease;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    color: bisque;
+    top: 30px;
+}
+
+.nav_ele li{
+    margin: 0;
+    background-color: rgb(187, 178, 196);
+    width: 100%;
+    padding: 5px;
+
+}
+
+#link:hover~.nav_ele{
+    height: max-content;
+}
+
+.block2>li{
+    margin: 0px 10px ;
+}
+
+body{
+    background-image: url(Img/p1.jpg);
+}
+
+
+
+
+.img_ele{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    /* transform: scale(1.5); */
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+#pic{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 200px;
+    width: 200px;
+    margin: 3%;
+    /* transform: scale(1.5); */
+    transition-property: all;
+    transition-delay: 1s;
+    transition-duration :3s ;
+    transition-timing-function: ease;
+} 
+
+.ele{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    animation-name: first;
+    animation-delay: 0.1s;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: 5;
+}
+
+@keyframes first {
+   0%{transform:translate(0px,0px)}
+   25%{transform: translate(20px,0px);}
+}
+ 
+.ele_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease;
+}
+
+.ele_img #pic:hover{
+    transform: translate(0px,5px);
+
+}
+#pic:hover{ 
+    transform: scale(1.5);
+} 
+
+
+
+
